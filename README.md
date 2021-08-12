@@ -9,8 +9,8 @@ A lightweight tool for setting `figsize` and font sizes in `matplotlib`, with su
 
 ## Installation
 ```bash
-git clone git@github.com:BayesWatch/matplotlib_size_sheets.git
-cd matplotlib_size_sheets 
+git clone git@github.com:BayesWatch/mpl_sizes.git
+cd mpl_sizes 
 python setup.py install
 ```
 
