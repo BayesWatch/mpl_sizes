@@ -1,4 +1,4 @@
-from typing import Dict, NewType, Tuple
+   from typing import Dict, NewType, Tuple
 import matplotlib.pyplot as plt
 
 Inches = NewType("Inches", float)

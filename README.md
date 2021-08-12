@@ -37,3 +37,18 @@ A full example is given in `example.py`.
 
 You can also set aspect ratio to be: "narrow", "normal", "wide", or "equal". 
 
+## Aspect ratios
+
+You can also set aspect ratio to be: "narrow", "normal", "wide", or "equal".   
+  
+Equal: 
+![](figures/equal.png)  
+
+Narrow:
+![](figures/narrow.png)  
+
+Normal:
+![](figures/normal.png)  
+
+Wide:
+![](figures/wide.png)
