@@ -32,3 +32,5 @@ and font size will automatically be set correctly.
 
 A full example is given in `example.py`. 
 
+You can also set aspect ratio to be: "narrow", "normal", "wide", or "equal". 
+
