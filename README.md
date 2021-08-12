@@ -1,24 +1,34 @@
-# matplotlib_size_sheets
-Cheat sheets for figure sizes for various conference formats
+# mpl_sizes
 
-## Setting font sizes
+A lightweight tool for setting `figsize` and font sizes in `matplotlib`, with support for:
 
-You can either set these in your own stylesheet and use that, or you can write this at the start of all your plotting code:
+- ICLR
+- ICML
+- NeurIPS
+- Informatics thesis 
 
-```
-import matplotlib.pyplot as plt
-
-SMALL_SIZE = 10
-MEDIUM_SIZE = 12
-BIGGER_SIZE = 14
-
-plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
-plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
-plt.rc('axes', labelsize=MEDIUM_SIZE)    # fontsize of the x and y labels
-plt.rc('xtick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
-plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
-plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
-plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
+## Installation
+```bash
+git clone git@github.com:BayesWatch/matplotlib_size_sheets.git
+cd matplotlib_size_sheets 
+python setup.py install
 ```
 
-Courtesy of [this stackoverflow post](https://stackoverflow.com/questions/3899980/how-to-change-the-font-size-on-a-matplotlib-plot).
+## Usage
+
+In your plotting script: 
+
+```python
+from mpl_sizes import get_format
+
+formatter = get_format("InfThesis") # options: ICLR, ICML, NeurIPS, InfThesis
+```
+
+Formatters have two methods: 
+- `text_width_plot` - for full pagewidth plots (e.g. in double column, this would be a full width plot)
+- `line_width_plot` - for plots the width of the lines of text
+
+and font size will automatically be set correctly. 
+
+A full example is given in `example.py`. 
+
