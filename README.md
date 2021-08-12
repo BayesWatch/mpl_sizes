@@ -9,8 +9,8 @@ A lightweight tool for setting `figsize` and font sizes in `matplotlib`, with su
 
 ## Installation
 ```bash
-git clone git@github.com:BayesWatch/matplotlib_size_sheets.git
-cd matplotlib_size_sheets 
+git clone git@github.com:BayesWatch/mpl_sizes.git
+cd mpl_sizes 
 python setup.py install
 ```
 
@@ -37,18 +37,22 @@ A full example is given in `example.py`.
 
 You can also set aspect ratio to be: "narrow", "normal", "wide", or "equal". 
 
-## Aspect ratios
+## Aspect ratios
 
 You can also set aspect ratio to be: "narrow", "normal", "wide", or "equal".   
   
-Equal: 
+Equal:  
+
 ![](figures/equal.png)  
 
-Narrow:
+Narrow:  
+
 ![](figures/narrow.png)  
 
-Normal:
+Normal:  
+
 ![](figures/normal.png)  
 
-Wide:
+Wide:  
+  
 ![](figures/wide.png)
