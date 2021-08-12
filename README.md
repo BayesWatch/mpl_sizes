@@ -19,11 +19,12 @@ python setup.py install
 In your plotting script: 
 
 ```python
+import matplotlib.pyplot as plt
 from mpl_sizes import get_format
 
 formatter = get_format("InfThesis") # options: ICLR, ICML, NeurIPS, InfThesis
 
-fig, ax = plt.subplots(figsize=formatter.text_width_plot())
+fig, ax = plt.subplots(1, 1, figsize=formatter.text_width_plot())
 ```
 
 Formatters have two methods: 
