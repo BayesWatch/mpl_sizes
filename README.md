@@ -22,6 +22,8 @@ In your plotting script:
 from mpl_sizes import get_format
 
 formatter = get_format("InfThesis") # options: ICLR, ICML, NeurIPS, InfThesis
+
+fig, ax = plt.subplots(figsize=formatter.text_width_plot())
 ```
 
 Formatters have two methods: 
