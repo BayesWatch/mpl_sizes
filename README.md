@@ -14,7 +14,7 @@ cd matplotlib_size_sheets
 python setup.py install
 ```
 
-## Usage
+## Usage
 
 In your plotting script: 
 
