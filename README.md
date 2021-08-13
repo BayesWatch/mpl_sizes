@@ -8,6 +8,14 @@ A lightweight tool for setting `figsize` and font sizes in `matplotlib`, with su
 - Informatics thesis 
 
 ## Installation
+
+Install via `pip`:
+
+```bash
+pip install mpl_sizes
+```
+
+Install from source:
 ```bash
 git clone git@github.com:BayesWatch/mpl_sizes.git
 cd mpl_sizes 
