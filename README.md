@@ -18,7 +18,7 @@ pip install mpl_sizes
 
 Install from source:
 ```bash
-git clone git@github.com:BayesWatch/mpl_sizes.git
+git clone git@github.com:BayesWatch/mpl-sizes.git
 cd mpl_sizes 
 python setup.py install
 ```
