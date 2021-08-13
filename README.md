@@ -1,4 +1,5 @@
 # mpl_sizes
+![](https://img.shields.io/pypi/v/mpl_sizes?color=green)
 
 A lightweight tool for setting `figsize` and font sizes in `matplotlib`, with support for:
 
