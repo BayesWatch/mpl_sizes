@@ -10,6 +10,8 @@ class InfThesis(PaperFormat):
         line_width: float = 5.70978
         text_width: float = 5.70978
 
+        font = {"family": "sans-serif", "sans-serif": ["DejaVu Sans"]}
+
         super().__init__(
             small_font_size, medium_font_size, large_font_size, line_width, text_width
         )

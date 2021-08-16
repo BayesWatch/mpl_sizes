@@ -1,5 +1,5 @@
-from typing import Dict, NewType, Tuple
 import matplotlib.pyplot as plt
+from typing import Dict, NewType, Tuple
 
 Inches = NewType("Inches", float)
 
@@ -24,10 +24,16 @@ class PaperFormat:
         large_font_size: int,
         line_width: float,
         text_width: float,
+        font: Dict = None,
     ):
         self.small_font_size = small_font_size
         self.medium_font_size = medium_font_size
         self.large_font_size = large_font_size
+
+        if font is None:
+            font = {"family": "serif", "serif": ["Times"]}
+
+        self.font = font
         self.set_font_sizes()
 
         self.line_width = line_width
@@ -59,3 +65,7 @@ class PaperFormat:
         plt.rc("legend", fontsize=self.small_font_size)  # legend fontsize
         plt.rc("legend", title_fontsize=self.medium_font_size)  # legend fontsize
         plt.rc("figure", titlesize=self.large_font_size)  # fontsize of the figure title
+
+        # configure actual font
+        plt.rc("font", **self.font)
+        plt.rc("text", usetex=True)

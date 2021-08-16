@@ -40,19 +40,13 @@ You can also set aspect ratio to be: "narrow", "normal", "wide", or "equal".
 ## Aspect ratios
 
 You can also set aspect ratio to be: "narrow", "normal", "wide", or "equal".   
-  
-Equal:  
 
-![](figures/equal.png)  
 
-Narrow:  
+e.g. 
 
-![](figures/narrow.png)  
+A single column width plot for ICML:
+![](figures/ICML_normal.png)
 
-Normal:  
 
-![](figures/normal.png)  
-
-Wide:  
-  
-![](figures/wide.png)
+A double column width plot in wide aspect ratio:
+![](figures/ICML_wide.png)
