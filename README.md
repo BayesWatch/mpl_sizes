@@ -1,4 +1,5 @@
 # mpl_sizes
+![](https://img.shields.io/pypi/v/mpl_sizes?color=green)
 
 A lightweight tool for setting `figsize` and font sizes in `matplotlib`, with support for:
 
@@ -8,6 +9,14 @@ A lightweight tool for setting `figsize` and font sizes in `matplotlib`, with su
 - Informatics thesis 
 
 ## Installation
+
+Install via `pip`:
+
+```bash
+pip install mpl-sizes
+```
+
+Install from source:
 ```bash
 git clone git@github.com:BayesWatch/mpl_sizes.git
 cd mpl_sizes 
